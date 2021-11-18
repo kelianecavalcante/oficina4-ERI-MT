@@ -1,5 +1,5 @@
 import React from 'react';
-import { RiCloseCircleLine } from 'react-icons/ri';
+import { RiDeleteBack2Line } from "react-icons/ri";
 
 function Itens({ itens, removeLista }) {
     return itens.map((item, index) => (
@@ -8,7 +8,7 @@ function Itens({ itens, removeLista }) {
                 {item.text}
             </div>
             <div className='icones' >
-                <RiCloseCircleLine onClick={() => removeLista(item.id)} />
+                <RiDeleteBack2Line onClick={() => removeLista(item.id)}/>
             </div>
         </div>
     ))
